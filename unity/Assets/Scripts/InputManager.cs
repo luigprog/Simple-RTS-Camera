@@ -12,7 +12,8 @@ using System.Collections;
 /// - Github:  https://github.com/garcialuigi
 /// - Facebook: https://www.facebook.com/mr.garcialuigi
 /// ######################################################
-public class InputManager : MonoBehaviour {
+public class InputManager : MonoBehaviour
+{
 
     // this must be configured by inspector
     public KeyCode upArrow;
@@ -28,15 +29,18 @@ public class InputManager : MonoBehaviour {
     public static InputManager instance; // instance reference
     private Vector2 panAxis = Vector2.zero;
 
-    void Awake() {
+    void Awake()
+    {
         instance = this; // instance reference
     }
 
-    void Update() {
+    void Update()
+    {
         UpdatePanAxis();
     }
 
-    private void UpdatePanAxis() {
+    private void UpdatePanAxis()
+    {
         panAxis = Vector2.zero;
 
         if (Input.GetKey(upArrow))
@@ -58,11 +62,13 @@ public class InputManager : MonoBehaviour {
         }
     }
 
-    public Vector2 GetPanAxis() {
+    public Vector2 GetPanAxis()
+    {
         return panAxis;
     }
 
-    public bool GetRotateAroundLeft() {
+    public bool GetRotateAroundLeft()
+    {
         return Input.GetKey(rotateAroundLeft);
     }
 
@@ -96,8 +102,8 @@ public class InputManager : MonoBehaviour {
         return value;
     }
 
-    public bool GetJumpBackToPlayer() {
+    public bool GetJumpBackToPlayer()
+    {
         return Input.GetKey(jumpBackToPlayer);
     }
-
 }
