@@ -1,5 +1,5 @@
-# SimpleRtsCamera - Unity
-RTS camera made in Unity.
+# Simple RTS Camera
+Simple camera controller for real-time strategy games, made in Unity C#.
 
-# Videos
-https://www.youtube.com/watch?v=DIyaPCOYuWg
+# Demo
+https://youtu.be/DIyaPCOYuWg
